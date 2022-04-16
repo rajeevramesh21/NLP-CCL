@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/style.css">
+    <title>Personality traits Analysis</title>
+
+  </head>
+  <body>
+    <a href="/">
+      <img src = "/static/CSS/images/lp2 (8).png" width="100%">
+    </a>
+    <br>
+
+ {% block body %}
+
+  <!--
+  Video Analysis
+  -->
+
+      <!--
+      Text Analysis
+      -->
+      <div class="column_home" id="left-col" align="center">
+       <img src = "/static/CSS/images/P_Traits.png" width="100%">
+         <div style="width:70%; text-align:justify; align-content:center; display:inline-block;">
+           <br>
+           <p> Text Sentiment Analysis </p>
+           <br>
+           <p> Psychological traits categories are:
+           <ul>
+             <li>Openness</li>
+             <li>Conscientiousness</li>
+             <li>Extraversion</li>
+             <li>Agreeableness</li>
+             <li>Neuroticism</li>
+         </ul>
+         <br>
+         </div>
+     </div>
+
+  </div>
+
+
+
+
+    <!--
+     Text button
+     -->
+    <div class="column_home" id="left-col" align="center">
+        <form action="/text" method="post" align="center">
+          <input type="submit" name="text" value="Text Analysis" align="center">
+        </form>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+      {# Fin du bloc "body" #}
+    {% endblock %}
+
+  </body>
+</html>
