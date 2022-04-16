@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/style.css">
+    <title>Personality traits Analysis</title>
+
+  </head>
+  <body>
+    <a href="/">
+      <img src = "/static/CSS/images/LP2 (7).png" width="100%">
+    </a>
+
+{% block body %}
+
+<br>
+
+<br>
+
+  <blockquote>
+    <p class="quotation"> Tell us about your views on Innovation and leadership.</p>
+  </blockquote> 
+
+  <form action="/text_1" method="post">
+      <textarea cols="70" rows ="20" name="text"></textarea><br><br>
+    <input type="submit" value="Start Analysis">
+  </form>
+
+
+{% endblock %}
+
+
+ <br>
+    <form>
+    <input type="button" value="Back" onclick="history.go(-1)">
+  </form>
+  <br>
+  </body>
+</html>
